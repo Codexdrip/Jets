@@ -7,7 +7,7 @@ import "../CSS/LandingPage.css";
 
 function App() {
   return (
-    <div className="App container-fluid">
+    <div className="App">
       <Navbar />
       <LandingPagePic />
       <Welcome />

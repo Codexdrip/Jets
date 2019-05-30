@@ -7,7 +7,15 @@ const LandingPagePic = props => {
   return (
     <section className="container-fluid App-header">
       <div className="row">
-        <video width="100%" height="450px" autoPlay muted loop>
+        <video
+          width="100%"
+          height="450px"
+          preload="auto"
+          src={vid}
+          autoPlay
+          muted
+          loop
+        >
           <source src={vid} type="video/mp4" />
           Your browser do""es not support the video tag.
         </video>

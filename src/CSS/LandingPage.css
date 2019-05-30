@@ -63,12 +63,14 @@ video {
   text-transform: uppercase;
   border-radius: 10px;
   background-color: rgb(255, 153, 0);
+  border-color: white;
   font-family: "Rokkitt";
   transition: background-color 1s ease;
 }
 
 .btn:hover {
   background-color: rgba(101, 153, 255);
+
   transition: 1s ease;
   -moz-transform: translate(0px, -3px);
   -ms-transform: translate(0px, -3px);
