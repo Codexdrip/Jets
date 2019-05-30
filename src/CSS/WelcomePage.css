@@ -1,0 +1,103 @@
+.welcome h2,
+.welcome p,
+.copy h2,
+.copy blockquote {
+  font-family: "Nunito", sans-serif;
+}
+
+.welcome h2 {
+  font-weight: bold;
+  color: rgb(255, 153, 0);
+}
+
+.copy h2 {
+  font-weight: bolder;
+  color: rgb(255, 153, 0);
+  text-align: center;
+  text-shadow: 10%;
+  margin: 1em 0 0.5em 0;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  text-shadow: 0 2px white;
+}
+.copy {
+  padding: 5%;
+  display: block;
+}
+.welcome {
+  display: flexbox;
+  padding: 10px;
+  width: 100%;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 4px 32px;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .card {
+    width: 50%;
+  }
+  .welcome {
+    display: flex;
+    padding-top: 30px;
+  }
+  .copy {
+    padding: 1%;
+    padding-bottom: 30px;
+  }
+  blockquote {
+    max-width: 100%;
+    text-align: center;
+    display: inline-block;
+    justify-content: center;
+    font-size: 24px;
+  }
+  .copy h2 {
+    font-size: 50px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .welcome {
+    display: flex;
+    margin-top: 60px;
+  }
+  .copy {
+    padding: 1%;
+    margin-bottom: 60px;
+  }
+  blockquote {
+    max-width: 100%;
+    text-align: center;
+    display: inline-block;
+    justify-content: center;
+    font-size: 24px;
+  }
+  .copy h2 {
+    font-size: 50px;
+  }
+  .card {
+    width: 50%;
+    margin: 10px;
+  }
+}

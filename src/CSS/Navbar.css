@@ -1,0 +1,108 @@
+span {
+  color: white;
+  font-family: "Rokkitt", serif;
+  font-size: 24px;
+}
+span:hover {
+  color: rgb(255, 222, 0) !important;
+}
+
+.fs-link {
+  transition: color 2s ease;
+}
+
+.navbar-toggler-icon {
+  font-size: 28px;
+  border-color: white;
+}
+
+button {
+  align-content: right;
+}
+.row {
+  padding-bottom: 35px;
+}
+
+#x-btn {
+  top: 0;
+  right: 0;
+  position: absolute;
+  color: red;
+  font-size: 12vmax;
+}
+
+.row.x-btn {
+  padding-bottom: 50%;
+  padding-left: 50%;
+}
+.navbar-brand img {
+  width: 15%;
+  height: auto;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.navbar-toggler {
+  top: 0;
+  right: 0;
+  position: fixed;
+  margin: 10%;
+  color: white;
+  height: auto;
+  width: 25%;
+}
+
+.custom-toggler.navbar-toggler {
+  border: 0px;
+}
+.custom-toggler .navbar-toggler-icon {
+  padding: -40px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(101, 153, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+#overlay {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.hide-overlay {
+  opacity: 0;
+  width: 0%;
+  height: 100%;
+  transition: opacity 1s ease, width 2s ease;
+  -moz-transition: opacity 1s ease, width 2s ease;
+  -ms-transition: opacity 1s ease, width 2s ease;
+  -o-transition: opacity 1s ease, width 2s ease;
+  -webkit-transition: opacity 1s ease, width 2s ease;
+}
+
+.fade-in-overlay {
+  width: 100% !important;
+  height: 100% !important;
+  opacity: 1;
+  transition: opacity 2s ease, width s ease;
+  -moz-transition: opacity 2s ease, width 1s ease;
+  -ms-transition: opacity 2s ease, width 1s ease;
+  -o-transition: opacity 2s ease, width 1s ease;
+  -webkit-transition: opacity 2s ease, width 1s ease;
+}
+
+#text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 30px;
+  color: white;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 768px) {
+}
