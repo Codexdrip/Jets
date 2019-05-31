@@ -39,8 +39,8 @@ class Navbar extends React.Component {
 
   render() {
     return (
-      <nav className="navbar navbar-expand-lg navbar-light bg-lignt ml-auto shadow fixed-top nav-start overlay ">
-        <div className="container">
+      <nav className="navbar navbar-expand-lg navbar-dark  ml-auto shadow fixed-top nav-start overlay ">
+        <div className="container-fluid">
           <a className="navbar-brand" href="#">
             <span>
               <img src={jetlifelogo} alt=":(" />

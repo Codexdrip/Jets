@@ -1,13 +1,19 @@
 .welcome h2,
-.welcome p,
 .copy h2,
 .copy blockquote {
+  font-family: "Rokkitt", serif;
+}
+
+.welcome p {
   font-family: "Nunito", sans-serif;
+  word-wrap: break-word;
 }
 
 .welcome h2 {
   font-weight: bold;
   color: rgb(255, 153, 0);
+  word-wrap: break-word;
+  text-shadow: 1px 1px 2px #000000;
 }
 
 .copy h2 {
@@ -20,15 +26,16 @@
   font-size: 36px;
   line-height: 42px;
   text-transform: uppercase;
-  text-shadow: 0 2px white;
+  text-shadow: 1px 1px 2px #000000;
+  word-wrap: break-word;
 }
 .copy {
-  padding: 5%;
-  display: block;
+  padding: 10%;
+  display: flexbox;
 }
 .welcome {
   display: flexbox;
-  padding: 10px;
+  padding: 6%;
   width: 100%;
 }
 
@@ -48,7 +55,7 @@
 }
 
 .container {
-  padding: 4px 32px;
+  padding: 4px 8%;
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
