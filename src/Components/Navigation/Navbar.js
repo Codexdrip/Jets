@@ -21,25 +21,38 @@ class Navbar extends React.Component {
   };
 
   componentDidMount() {
+    let prevScrollpos = window.pageYOffset;
     document.addEventListener("scroll", () => {
-      const isTop = window.scrollY < 500;
-      if (isTop) {
-        var links = document.getElementsByClassName("fs-link");
-        for (var i = 0; i < links.length; i++) {
-          links[i].style.color = "white";
-        }
+      //const isTop = window.scrollY < 500;
+
+      let currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
       } else {
-        var links = document.getElementsByClassName("fs-link");
-        for (var i = 0; i < links.length; i++) {
-          links[i].style.color = "rgba(101, 153, 255)";
-        }
+        document.getElementById("navbar").style.top = "-50%";
       }
+      prevScrollpos = currentScrollPos;
+
+      // if (isTop) {
+      //   var links = document.getElementsByClassName("fs-link");
+      //   for (var i = 0; i < links.length; i++) {
+      //     links[i].style.color = "white";
+      //   }
+      // } else {
+      //   var links = document.getElementsByClassName("fs-link");
+      //   for (var i = 0; i < links.length; i++) {
+      //     links[i].style.color = "rgba(101, 153, 255)";
+      //   }
+      // }
     });
   }
 
   render() {
     return (
-      <nav className="navbar navbar-expand-lg navbar-dark  ml-auto shadow fixed-top nav-start overlay ">
+      <nav
+        id="navbar"
+        className="navbar navbar-expand-lg navbar-dark  ml-auto shadow fixed-top nav-start overlay "
+      >
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
             <span>

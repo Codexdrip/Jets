@@ -12,8 +12,7 @@ span:hover {
 }
 
 .navbar-toggler-icon {
-  font-size: 28px;
-  border-color: white;
+  font-size: 20px;
 }
 
 button {
@@ -36,6 +35,9 @@ button {
   padding-bottom: 100%;
   padding-left: 100%;
 }
+#navbar {
+  transition: top 1s;
+}
 .navbar-brand img {
   width: 15%;
   height: auto;
@@ -48,14 +50,13 @@ button {
   right: 0;
   position: fixed;
   margin: 5%;
-  background-color: transparent;
+
   height: auto;
   width: 15%;
   padding: 5px;
 }
 
 .custom-toggler.navbar-toggler {
-  border: 1px solid rgba(101, 153, 255);
 }
 .custom-toggler .navbar-toggler-icon {
   padding: -40px;

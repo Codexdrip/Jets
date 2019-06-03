@@ -15,12 +15,15 @@ video {
   background-size: 500px 850px;
   background-position-x: 60%;
 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
   height: 100vh;
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
+}
+
+.smoke-bg {
+  width: 100%;
+  height: 100vh;
+  opacity: 0.4;
 }
 
 .App-link {
@@ -192,9 +195,9 @@ video {
     background-size: cover;
     height: 100vh;
     background: url("../Images/stage.jpg");
+    background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-repeat: no-repeat;
   }
   .LP-Pic h1 {
     font-family: "Pacifico", cursive;
@@ -211,6 +214,11 @@ video {
   }
   .LP-Pic {
     height: 100%;
+    z-index: 10;
+  }
+  .smoke-bg {
+    width: 100%;
+    height: 100vh;
   }
 
   .LP-Pic h3 {
@@ -239,10 +247,9 @@ video {
   }
   .App-header {
     background-size: cover !important;
-    height: 130vh;
+    height: 100vh;
     background: url("../Images/stage.jpg");
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center;
   }
   .LP-Pic h1 {
@@ -251,5 +258,14 @@ video {
     font-size: calc(50px + 3vmin);
     padding-top: 30%;
     border-bottom: 1px solid #ffffff;
+  }
+
+  .crowd {
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    background: url("../Images/bigCrowd.jpg") no-repeat 50% 50%;
+    background-size: cover;
+    filter: blur(4px);
   }
 }

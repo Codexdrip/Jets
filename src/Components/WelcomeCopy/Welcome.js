@@ -1,49 +1,141 @@
 import React from "react";
 import wraith from "../../Images/wraith2.png";
 import plane from "../../Images/CurrXplane2.jpg";
+import gify from "../../Images/cs5.gif";
 import profile from "../../Images/currxprofile.jpg";
-
+import Parallax from "react-rellax";
 import "../../CSS/WelcomePage.css";
 
 const Welcome = () => {
   return (
-    <section className="row ">
-      <div className="copy">
-        <h2>Welcome to the offical home of Spitta!</h2>
-        <br />
-        <blockquote>
-          This is the one stop source for all content that is Curren$y. Here you
-          can keep with up with Spitta's social media, check out his latest
-          tracks and videos, get in touch for interviews or booking, and even
-          purchase official JetLife gear. Get a taste of the Curren$y lifestyle.
-        </blockquote>
+    <section>
+      <div style={{ textAlign: "center", zIndex: 10 }}>
+        <h2>Responsive Zig Zag Layout Example</h2>
+        <p>Resize the browser window to see the effect.</p>
+      </div>
+      {
+        //<!-- The App Section -->
+      }
+      <div className="container">
+        <div className="row">
+          <Parallax
+            speed={3}
+            className={"column-33 "}
+            percentage={0.7}
+            style={{ zIndex: 10 }}
+          >
+            <div data-rellax-speed="7" data-rellax-zindex="5">
+              <h1 className="xlarge-font">
+                <b>The App</b>
+              </h1>
+              <h1 className="large-font" style={{ color: "MediumSeaGreen;" }}>
+                <b>Why buy it?</b>
+              </h1>
+
+              <p>
+                <span style={{ fontSize: "36px" }}>
+                  Take photos like a pro.
+                </span>{" "}
+                You should buy this app because lorem ipsum consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+              </p>
+              <button className="button">Download Application</button>
+            </div>
+          </Parallax>
+          <Parallax
+            speed={6}
+            style={{ zIndex: 0 }}
+            className={"column-66"}
+            percentage={0.5}
+          >
+            <div>
+              <img src={plane} width="100%" height="auto" />
+            </div>
+          </Parallax>
+        </div>
       </div>
 
-      <div className="welcome">
-        <div className="card">
-          <img src={wraith} alt=":(" />
-          <div className="container">
-            <h2>Welcome to the offical home of Spitta!</h2>
-            <p>
-              This is the one stop source for all content that is Curren$y. Here
-              you can keep with up with Spitta's social media, check out his
-              latest tracks and videos, get in touch for interviews or booking,
-              and even purchase official JetLife gear. Get a taste of the
-              Curren$y lifestyle.
-            </p>
+      {
+        //<!-- Clarity Section -->
+      }
+      <div
+        style={{
+          width: "100%",
+          backgroundColor: "#f1f1f1"
+        }}
+      >
+        <div className="container" style={{ backgroundColor: "#f1f1f1" }}>
+          <div className="row">
+            <Parallax
+              speed={1}
+              className="column-66"
+              zIndex={0}
+              percentage={0.8}
+            >
+              <div>
+                <img src={wraith} alt="App" width="100%" height="auto" />
+              </div>
+            </Parallax>
+            <Parallax
+              speed={4}
+              className="column-33"
+              zIndex={10}
+              percentage={0.5}
+            >
+              <div>
+                <h1 className="xlarge-font">
+                  <b>Clarity</b>
+                </h1>
+                <h1 className="large-font" style={{ color: "red;" }}>
+                  <b>Pixels, who?</b>
+                </h1>
+                <p>
+                  <span style={{ fontSize: "24px" }}>
+                    A revolution in resolution.
+                  </span>{" "}
+                  Sharp and clear photos with the world's best photo engine,
+                  incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                  veniam, quis nostrud exercitation ullamco laboris nisi ut
+                  aliquipex ea commodo consequat. Duis aute irure dolor in
+                  reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                  nulla pariatur.
+                </p>
+                <button className="button" style={{ backgroundColor: "red" }}>
+                  Read More
+                </button>
+              </div>
+            </Parallax>
           </div>
         </div>
-        <div className="card">
-          <img src={plane} alt=":(" />
-          <div className="container">
-            <h2>Welcome to the offical home of Spitta!</h2>
+      </div>
+      {
+        //<!-- The App Section -->
+      }
+      <div className="container">
+        <div className="row">
+          <div className="column-33">
+            <h1 className="xlarge-font">
+              <b>The App</b>
+            </h1>
+            <h1 className="large-font" style={{ color: "MediumSeaGreen;" }}>
+              <b>Why buy it?</b>
+            </h1>
             <p>
-              This is the one stop source for all content that is Curren$y. Here
-              you can keep with up with Spitta's social media, check out his
-              latest tracks and videos, get in touch for interviews or booking,
-              and even purchase official JetLife gear. Get a taste of the
-              Curren$y lifestyle.
+              <span style={{ fontSize: "36px" }}>Take photos like a pro.</span>{" "}
+              You should buy this app because lorem ipsum consectetur adipiscing
+              elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+              dolor in reprehenderit in voluptate velit esse cillum dolore eu
+              fugiat nulla pariatur.
             </p>
+            <button className="button">Download Application</button>
+          </div>
+          <div className="column-66">
+            <img src={gify} width="100%" height="auto" />
           </div>
         </div>
       </div>
