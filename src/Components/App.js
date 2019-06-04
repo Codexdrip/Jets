@@ -4,6 +4,7 @@ import Navbar from "./Navigation/Navbar";
 import Tweets from "./LandingPage/TwitterPost";
 import Welcome from "./WelcomeCopy/Welcome";
 import ParallaxComponent from "react-parallax-component";
+import ImageRotate from "./LpCarousel/Carousel";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Navbar />
       <LandingPagePic />
       <Welcome />
+      <ImageRotate />
     </div>
   );
 }

@@ -9,7 +9,7 @@ const LandingPagePic = props => {
   return (
     <section>
       <Parallax className="App-header" speed={0} style={{ zIndex: 0 }}>
-        <Parallax speed={-4} style={{ zIndex: 1 }} percentage={0.1}>
+        <Parallax speed={-2} style={{ zIndex: 1 }} percentage={0.1}>
           <img className="smoke-bg" src={smoke} alt=":(" />
         </Parallax>
       </Parallax>
