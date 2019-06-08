@@ -1,10 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
+  position: relative;
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
-
   background: #fff;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
@@ -19,20 +23,18 @@ code {
 }
 
 section {
+  max-width: 100%;
+  position: relative;
 }
 
 .App {
+  max-width: 100%;
 }
 
+/* Tablets */
 @media only screen and (min-width: 768px) {
-  section {
-    padding-bottom: 5%;
-  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  section {
-    padding-bottom: 5%;
-  }
 }

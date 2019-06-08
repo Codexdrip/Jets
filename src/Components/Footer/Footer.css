@@ -1,0 +1,15 @@
+footer {
+  background-color: darkgray;
+}
+
+i {
+  border-radius: 50%;
+  padding: 5px;
+  margin: auto;
+  background-color: red;
+  width: 130px;
+  height: 130px;
+}
+a i {
+  display: flexbox;
+}

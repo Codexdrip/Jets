@@ -1,6 +1,6 @@
 import React from "react";
 import jetlifelogo from "../../Images/jetlifelogo.jpg";
-import "../../CSS/Navbar.css";
+import "./Navbar.css";
 
 class Navbar extends React.Component {
   constructor(props) {

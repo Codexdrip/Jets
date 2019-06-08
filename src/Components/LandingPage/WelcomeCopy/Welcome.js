@@ -1,11 +1,11 @@
 import React from "react";
-import wraith from "../../Images/wraith2.png";
-import plane from "../../Images/CurrXplane2.jpg";
-import gify from "../../Images/cs5.gif";
-import profile from "../../Images/currxprofile.jpg";
+import wraith from "../../../Images/wraith2.png";
+import plane from "../../../Images/CurrXplane2.jpg";
+import gify from "../../../Images/cs5.gif";
+import profile from "../../../Images/currxprofile.jpg";
 import Parallax from "react-rellax";
 import Fade from "react-reveal/Fade";
-import "../../CSS/WelcomePage.css";
+import "./WelcomePage.css";
 
 const Welcome = () => {
   return (
@@ -108,7 +108,14 @@ const Welcome = () => {
                     reprehenderit in voluptate velit esse cillum dolore eu
                     fugiat nulla pariatur.
                   </p>
-                  <button className="button" style={{ backgroundColor: "red" }}>
+                  <button
+                    className="button"
+                    style={{
+                      backgroundColor: "transparent",
+                      borderColor: "red",
+                      color: "gray"
+                    }}
+                  >
                     Read More
                   </button>
                 </div>
@@ -122,7 +129,12 @@ const Welcome = () => {
       }
       <div className="container">
         <div className="row">
-          <Parallax className="column-33" speed={3} percentage={0.5}>
+          <Parallax
+            className="column-33"
+            speed={3}
+            percentage={0.5}
+            style={{ zIndex: 10 }}
+          >
             <Fade left>
               <h1 className="xlarge-font">
                 <b>The App</b>
@@ -144,7 +156,12 @@ const Welcome = () => {
               <button className="button">Download Application</button>
             </Fade>
           </Parallax>
-          <Parallax className="column-66" speed={1} percentage={0.5}>
+          <Parallax
+            className="column-66"
+            speed={1}
+            percentage={0.5}
+            style={{ zIndex: 0 }}
+          >
             <img src={gify} width="100%" height="auto" />
           </Parallax>
         </div>
