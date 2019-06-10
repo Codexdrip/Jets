@@ -23,23 +23,14 @@ const Welcome = () => {
           >
             <Fade left>
               <div className="blk-bg">
-                <h1 className="xlarge-font" style={{ color: "blue" }}>
+                <h1 className="xlarge-font" style={{ color: "orange" }}>
                   <b>Experience The Music</b>
                 </h1>
                 <p className="large-font" style={{ color: "white" }}>
                   Let your ears taste the audio dope.
                 </p>
 
-                <button
-                  className="button"
-                  style={{
-                    color: "white",
-                    backgroundColor: "transparent",
-                    borderColor: "orange"
-                  }}
-                >
-                  Download Application
-                </button>
+                <button className="button">Download Application</button>
               </div>
             </Fade>
           </Parallax>
@@ -135,7 +126,7 @@ const Welcome = () => {
           >
             <Fade left>
               <div className="blk-bg">
-                <h1 className="xlarge-font" style={{ color: "blue" }}>
+                <h1 className="xlarge-font" style={{ color: "orange" }}>
                   <b>Experience The Fashion</b>
                 </h1>
                 <p className="large-font" style={{ color: "white" }}>
@@ -147,7 +138,7 @@ const Welcome = () => {
                   style={{
                     color: "white",
                     backgroundColor: "transparent",
-                    borderColor: "orange"
+                    borderColor: "blue"
                   }}
                 >
                   Download Application

@@ -60,11 +60,10 @@
 }
 
 .welcome .large-font {
-  font-size: 32px;
+  font-size: 16px;
   font-weight: lighter;
   font-family: "Rokkitt", serif;
   color: #222;
-  text-shadow: 0px 2px 3px #555;
   word-wrap: break-word;
 }
 
@@ -78,12 +77,18 @@
 }
 
 .welcome .button {
-  border: 2px solid #4caf50;
-  color: darkgray;
+  border: 2px solid blue;
+  color: white;
   padding: 14px 28px;
   font-size: 16px;
   cursor: pointer;
   background-color: transparent;
+  transition: background-color 2s;
+}
+
+.welcome .button:hover {
+  background-color: blue;
+  transition: background-color 2s;
 }
 
 .welcome .container-fluid img {

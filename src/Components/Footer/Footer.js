@@ -10,26 +10,30 @@ const FooterPagePro = () => {
             <ul className="list-unstyled list-inline social text-center">
               <li className="list-inline-item">
                 <a href="javascript:void();">
-                  <i class="fab fa-facebook-f" />{" "}
+                  <i class="fab fa-facebook-f" style={{}} />{" "}
                 </a>
               </li>
               <li className="list-inline-item">
-                <a href="javascript:void();">
+                <a href="javascript:void();" style={{ color: "lightblue" }}>
                   <i class="fab fa-twitter" />{" "}
                 </a>
               </li>
               <li className="list-inline-item">
-                <a href="javascript:void();">
+                <a href="javascript:void();" style={{ color: "purple" }}>
                   <i class="fab fa-instagram" />
                 </a>
               </li>
               <li className="list-inline-item">
                 <a href="javascript:void();">
-                  <i class="fab fa-google-plus-g" />
+                  <i class="fab fa-google-plus-g" style={{ color: "red" }} />
                 </a>
               </li>
               <li className="list-inline-item">
-                <a href="javascript:void();" target="_blank">
+                <a
+                  href="javascript:void();"
+                  target="_blank"
+                  style={{ color: "white" }}
+                >
                   <i className="fa fa-envelope" />
                 </a>
               </li>
@@ -41,17 +45,11 @@ const FooterPagePro = () => {
         <div className="row">
           <div className="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
             <p className="h6">
-              <span style={{ color: "orange" }}>
+              <span style={{ color: "#222", textShadow: "none" }}>
                 {" "}
-                &copy; All right Reversed.
-              </span>
-              <a
-                className="text-green ml-2"
-                href="https://www.sunlimetech.com"
-                target="_blank"
-              >
+                &copy; {new Date().getFullYear() + " "}
                 The Never Die Corporation
-              </a>
+              </span>
             </p>
           </div>
           <hr />
@@ -60,7 +58,7 @@ const FooterPagePro = () => {
           <div className="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
             <p className="h6">
               <a
-                className="text-green ml-2"
+                style={{ color: "#222", textShadow: "none" }}
                 href="https://chrishobdy.herokuapp.com/"
                 target="_blank"
               >
