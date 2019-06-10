@@ -9,42 +9,37 @@ import "./WelcomePage.css";
 
 const Welcome = () => {
   return (
-    <section>
-      <div style={{ textAlign: "center", zIndex: 10 }}>
-        <h2>Responsive Zig Zag Layout Example</h2>
-        <p>Resize the browser window to see the effect.</p>
-      </div>
+    <section className="welcome">
       {
         //<!-- The App Section -->
       }
-      <div className="container">
+      <div className="container-fluid container-fluid-bg">
         <div className="row">
           <Parallax
-            speed={3}
+            speed={2}
             className={"column-33 "}
-            percentage={0.7}
+            percentage={0.6}
             style={{ zIndex: 10 }}
           >
             <Fade left>
-              <div data-rellax-speed="7" data-rellax-zindex="5">
-                <h1 className="xlarge-font">
-                  <b>The App</b>
+              <div className="blk-bg">
+                <h1 className="xlarge-font" style={{ color: "blue" }}>
+                  <b>Experience The Music</b>
                 </h1>
-                <h1 className="large-font" style={{ color: "MediumSeaGreen;" }}>
-                  <b>Why buy it?</b>
-                </h1>
-
-                <p>
-                  <span style={{ fontSize: "36px" }}>
-                    Take photos like a pro.
-                  </span>{" "}
-                  You should buy this app because lorem ipsum consectetur
-                  adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                  exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                  consequat.
+                <p className="large-font" style={{ color: "white" }}>
+                  Let your ears taste the audio dope.
                 </p>
-                <button className="button">Download Application</button>
+
+                <button
+                  className="button"
+                  style={{
+                    color: "white",
+                    backgroundColor: "transparent",
+                    borderColor: "orange"
+                  }}
+                >
+                  Download Application
+                </button>
               </div>
             </Fade>
           </Parallax>
@@ -54,9 +49,7 @@ const Welcome = () => {
             className={"column-66"}
             percentage={0.5}
           >
-            <div>
-              <img src={plane} width="100%" height="auto" />
-            </div>
+            <div />
           </Parallax>
         </div>
       </div>
@@ -71,7 +64,14 @@ const Welcome = () => {
           backgroundColor: "#f1f1f1"
         }}
       >
-        <div className="container" style={{ backgroundColor: "#f1f1f1" }}>
+        <div
+          className="container-fluid container-fluid-bg"
+          style={{
+            background: `url(${wraith})`,
+            backgroundPositionY: "35%",
+            height: "100vh"
+          }}
+        >
           <div className="row">
             <Parallax
               speed={1}
@@ -79,44 +79,32 @@ const Welcome = () => {
               zIndex={0}
               percentage={0.8}
             >
-              <div>
-                <img src={wraith} alt="App" width="100%" height="auto" />
-              </div>
+              <div />
             </Parallax>
             <Parallax
-              speed={4}
+              speed={3}
               className="column-33"
               zIndex={10}
-              percentage={0.5}
+              percentage={0.8}
             >
               <Fade right>
-                <div>
-                  <h1 className="xlarge-font">
-                    <b>Clarity</b>
+                <div className="blk-bg">
+                  <h1 className="xlarge-font" style={{ color: "orange" }}>
+                    <b>Expenience the Visuals</b>
                   </h1>
-                  <h1 className="large-font" style={{ color: "red;" }}>
-                    <b>Pixels, who?</b>
-                  </h1>
-                  <p>
-                    <span style={{ fontSize: "24px" }}>
-                      A revolution in resolution.
-                    </span>{" "}
-                    Sharp and clear photos with the world's best photo engine,
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation ullamco laboris nisi
-                    ut aliquipex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur.
+                  <p className="large-font" style={{ color: "white" }}>
+                    If a picture is worth a thousand words, what will a video
+                    convey?
                   </p>
                   <button
                     className="button"
                     style={{
+                      color: "white",
                       backgroundColor: "transparent",
-                      borderColor: "red",
-                      color: "gray"
+                      borderColor: "blue"
                     }}
                   >
-                    Read More
+                    Download Application
                   </button>
                 </div>
               </Fade>
@@ -127,33 +115,44 @@ const Welcome = () => {
       {
         //<!-- The App Section -->
       }
-      <div className="container">
+      <div
+        className="container-fluid container-fluid-bg"
+        style={{
+          background: `url(${profile})`,
+          backgroundPositionY: "30%",
+          height: "100vh",
+          backgroundPosition: "center",
+          backgroundAttachment: "fixed",
+          backgroundSize: "cover"
+        }}
+      >
         <div className="row">
           <Parallax
             className="column-33"
-            speed={3}
-            percentage={0.5}
+            speed={2}
+            percentage={0.8}
             style={{ zIndex: 10 }}
           >
             <Fade left>
-              <h1 className="xlarge-font">
-                <b>The App</b>
-              </h1>
-              <h1 className="large-font" style={{ color: "MediumSeaGreen;" }}>
-                <b>Why buy it?</b>
-              </h1>
-              <p>
-                <span style={{ fontSize: "36px" }}>
-                  Take photos like a pro.
-                </span>{" "}
-                You should buy this app because lorem ipsum consectetur
-                adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur.
-              </p>
-              <button className="button">Download Application</button>
+              <div className="blk-bg">
+                <h1 className="xlarge-font" style={{ color: "blue" }}>
+                  <b>Experience The Fashion</b>
+                </h1>
+                <p className="large-font" style={{ color: "white" }}>
+                  Feast your eyes on this fashion.
+                </p>
+
+                <button
+                  className="button"
+                  style={{
+                    color: "white",
+                    backgroundColor: "transparent",
+                    borderColor: "orange"
+                  }}
+                >
+                  Download Application
+                </button>
+              </div>
             </Fade>
           </Parallax>
           <Parallax
@@ -161,9 +160,7 @@ const Welcome = () => {
             speed={1}
             percentage={0.5}
             style={{ zIndex: 0 }}
-          >
-            <img src={gify} width="100%" height="auto" />
-          </Parallax>
+          />
         </div>
       </div>
     </section>

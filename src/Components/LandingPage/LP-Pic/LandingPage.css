@@ -26,7 +26,11 @@
   text-shadow: 2px 2px 2px #000000;
   padding: 0px 10px;
 }
-
+.LP-Pic h3 {
+  font-family: "Tangerine", cursive;
+  color: white;
+  font-size: calc(25px + 2vmin);
+}
 .LP-Pic h1 {
   font-family: "Pacifico", cursive;
   color: white;
@@ -35,10 +39,13 @@
   text-shadow: 2px 2px 4px #000000;
 }
 
-.LP-Pic h3 {
-  font-family: "Tangerine", cursive;
-  color: white;
-  font-size: calc(25px + 2vmin);
+.LP-Pic img {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  height: auto;
 }
 
 .LP-Pic i {
@@ -68,6 +75,31 @@
     background-position-x: 500%;
     background-position: center;
     background-repeat: no-repeat;
+  }
+}
+
+i.vert-move {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+i.vert-move {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
   }
 }
 
@@ -109,6 +141,14 @@
   .LP-Pic i {
     color: rgba(101, 153, 255);
     font-size: 60px;
+  }
+  .LP-Pic img {
+    position: relative;
+    width: 50%;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    height: auto;
   }
   .App-header {
     background-size: cover !important;

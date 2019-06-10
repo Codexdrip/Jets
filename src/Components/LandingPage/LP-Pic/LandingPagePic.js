@@ -18,13 +18,13 @@ const LandingPagePic = props => {
         <div className="row">
           <Parallax
             className="LP-Pic"
-            speed={8}
+            speed={4}
             percentage={0.3}
             style={{ zIndex: 2 }}
           >
             <img src={logo} alt=":(" />
             <h3>We turn instrumentals and weed into gold.</h3>
-            <i class="fas fa-angle-double-down App-logo" />
+            <i class="fas fa-angle-double-down App-logo vert-move" />
           </Parallax>
         </div>
       </div>
