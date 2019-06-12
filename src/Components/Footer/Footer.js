@@ -5,6 +5,71 @@ const FooterPagePro = () => {
   return (
     <section className="foot" id="footer">
       <div className="container-fluid">
+        <div className="row" style={{ marginBottom: "56px" }}>
+          <div className="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+            <h3 className="text-center">Quick Links</h3>
+            <ul className="list-unstyled list-inline text-center"> </ul>
+            <li className="list-inline-item">
+              <p className="h6">
+                <span
+                  style={{
+                    color: "#222",
+                    textShadow: "none",
+                    textDecoration: "underline"
+                  }}
+                  className="h7"
+                >
+                  {" "}
+                  Home
+                </span>
+              </p>
+            </li>
+            <li className="list-inline-item">
+              <p className="h6">
+                <span
+                  style={{ color: "#222", textShadow: "none" }}
+                  className="h7"
+                >
+                  {" "}
+                  Videos
+                </span>
+              </p>
+            </li>{" "}
+            <li className="list-inline-item">
+              <p className="h6">
+                <span
+                  style={{ color: "#222", textShadow: "none" }}
+                  className="h7"
+                >
+                  {" "}
+                  Photos
+                </span>
+              </p>
+            </li>
+            <li className="list-inline-item">
+              <p className="h6">
+                <span
+                  style={{ color: "#222", textShadow: "none" }}
+                  className="h7"
+                >
+                  {" "}
+                  Store
+                </span>
+              </p>
+            </li>
+            <li className="list-inline-item">
+              <p className="h6">
+                <span
+                  style={{ color: "#222", textShadow: "none" }}
+                  className="h7"
+                >
+                  {" "}
+                  Let's talk
+                </span>
+              </p>
+            </li>
+          </div>
+        </div>
         <div className="row">
           <div className="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
             <ul className="list-unstyled list-inline social text-center">
@@ -41,11 +106,14 @@ const FooterPagePro = () => {
           </div>
           <hr />
         </div>
-
+        <br />
         <div className="row">
           <div className="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
             <p className="h6">
-              <span style={{ color: "#222", textShadow: "none" }}>
+              <span
+                style={{ color: "#222", textShadow: "none" }}
+                className="h7"
+              >
                 {" "}
                 &copy; {new Date().getFullYear() + " "}
                 The Never Die Corporation
@@ -63,7 +131,9 @@ const FooterPagePro = () => {
                 target="_blank"
               >
                 Website designed by:{" "}
-                <span style={{ color: "blue" }}>CodeSplash</span>
+                <span style={{ color: "blue" }} className="h6">
+                  CodeSplash
+                </span>
               </a>
             </p>
           </div>

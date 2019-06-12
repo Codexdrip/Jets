@@ -59,7 +59,12 @@ const Welcome = () => {
           className="container-fluid container-fluid-bg"
           style={{
             background: `url(${wraith})`,
+
+            backgroundPosition: "center",
+            backgroundAttachment: "fixed",
+            backgroundSize: "cover",
             backgroundPositionY: "35%",
+            backgroundPositionX: "45%",
             height: "100vh"
           }}
         >
@@ -113,7 +118,7 @@ const Welcome = () => {
           backgroundPositionY: "30%",
           height: "100vh",
           backgroundPosition: "center",
-          backgroundAttachment: "fixed",
+          backgroundAttachment: "scroll",
           backgroundSize: "cover"
         }}
       >

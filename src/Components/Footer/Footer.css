@@ -2,14 +2,20 @@ section.foot {
   padding: 2px 0;
 }
 
-section.foot .section-title {
+section.foot {
   text-align: center;
-  color: #007b5e;
-  margin-bottom: 50px;
+  background: darkgray !important;
+
+  height: 100%;
+
   text-transform: uppercase;
 }
+section.foot .row {
+  height: 9vh;
+}
 #footer {
-  background: lightgray !important;
+}
+#footer .row {
 }
 #footer h5 {
   padding-left: 10px;
@@ -70,6 +76,14 @@ section.foot .section-title {
 }
 #footer ul.quick-links li:hover a i {
   font-weight: 700;
+}
+#footer p.h6,
+#footer span.h6 {
+  font-size: 8px;
+}
+
+#footer span.h7 {
+  font-size: 16px;
 }
 
 @media (max-width: 767px) {
